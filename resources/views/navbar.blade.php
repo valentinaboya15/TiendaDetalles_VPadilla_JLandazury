@@ -23,15 +23,10 @@
           <a class="dropdown-item" href="{{url('/informacion/ubicacion')}}">Ubicacion</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Catalogo </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{url('/catalogo/desayunos')}}">Desayunos</a>
-          <a class="dropdown-item" href="{{url('/catalogo/flores')}}">Flores</a>
-          <a class="dropdown-item" href="{{url('/catalogo/peluches')}}">Peluches</a>
-          <a class="dropdown-item" href="{{url('/catalogo/anchetas')}}">Anchetas</a>
-        </div>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url('/catalogo')}}" tabindex="-1" role="button" aria-disabled="true">Catalogo</a>
       </li>
+      
       
       
   
