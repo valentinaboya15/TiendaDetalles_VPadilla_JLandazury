@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-
+use Illuminate\Support\Facades\DB; 
 use Illuminate\Database\Seeder;
 
 class formaPagoSeeder extends Seeder
@@ -13,6 +13,16 @@ class formaPagoSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $formaPago=[
+            [
+                'Descripcion'=>'efectivo',
+            ],
+            
+            [
+                'Descripcion'=>'tarjeta',
+            ],
+
+        ];
+        DB::table('formapago')->insert($formaPago);
     }
 }

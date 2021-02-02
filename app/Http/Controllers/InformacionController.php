@@ -8,17 +8,17 @@ class InformacionController extends Controller
 {
     public function getnosotros() {
         
-        return view('presentacion.nosotros');
+        return view('informacion.nosotros');
     }
 
     public function getmision() {
         
-        return view('presentacion.mision');
+        return view('informacion.mision');
     }
 
     public function getubicacion() {
         
-        return view('presentacion.ubicacion');
+        return view('informacion.ubicacion');
     }
 
     public function getcontactos() {

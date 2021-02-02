@@ -15,7 +15,6 @@ class CreateCatalogoTable extends Migration
     {
         Schema::create('catalogo', function (Blueprint $table) {
             $table->bigIncrements('id_cata');
-             $table->string('Foto',45);
             $table->string('nombre',50);
             $table->timestamps();
         });

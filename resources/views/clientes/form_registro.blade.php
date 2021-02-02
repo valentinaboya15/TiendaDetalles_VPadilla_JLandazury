@@ -2,7 +2,7 @@
 @section('contenido')
     <h1> Registro de Clientes </h1>
   
-    <div class="p-3 mb-2 bg-dark text-white">  <form action="{{url('clientes/registrar')}}" method="POST">
+    <div class="p-3 mb-2 bg-dark text-white">  <form action="{{url('/clientes/registrar')}}" method="POST">
         @csrf
 
         <label for="login">Login </label>
@@ -13,12 +13,20 @@
             <input type="text" class="form-control" id='login' name='login'  placeholder="Login" aria-label="Username" aria-describedby="basic-addon1" required>
         </div>
 
-        <label for="contraseña">Contraseña </label>
+        
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+   
+            </div>
+            <input type="hidden" class="form-control" id='id' name='id' value='oculto' placeholder="Login" aria-label="Username" aria-describedby="basic-addon1" required>
+        </div>
+
+        <label for="password">Contraseña </label>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">@</span>
             </div>
-            <input type="password" class="form-control" id='contraseña' name='contraseña'  placeholder="Contraseña"  aria-describedby="basic-addon1">
+            <input type="password" class="form-control" id='password' name='contraseña'  placeholder="password"  aria-describedby="basic-addon1">
         </div>
 
         <label for="nombre">Nombre </label>

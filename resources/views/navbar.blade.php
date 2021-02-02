@@ -24,7 +24,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url('/catalogo')}}" tabindex="-1" role="button" aria-disabled="true">Catalogo</a>
+        <a class="nav-link" href="{{ url('/categorias/listado')}}" tabindex="-1" role="button" aria-disabled="true">Catalogo</a>
       </li>
       
       
@@ -35,7 +35,7 @@
       </li>
     </ul>
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/clientes/form_registro')}}" tabindex="-1" role="button" aria-disabled="true">Registrarse</a>
+        <a class="nav-link" href="{{ url('/clientes/registrar')}}" tabindex="-1" role="button" aria-disabled="true">Registrarse</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ url('/Administracion/login')}}" tabindex="-1" role="button" aria-disabled="true">iniciar sesion</a>

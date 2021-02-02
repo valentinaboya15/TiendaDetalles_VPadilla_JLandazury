@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
 
 class rolesSeeder extends Seeder
@@ -13,6 +13,19 @@ class rolesSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $Roles =[
+            [
+                'Descripcion'=>'Usuario',
+                
+            ], 
+            [
+                'Descripcion'=>'Administrador',
+                
+            ],
+
+
+        ];
+
+        DB::table('roles')->insert($Roles);
     }
 }
