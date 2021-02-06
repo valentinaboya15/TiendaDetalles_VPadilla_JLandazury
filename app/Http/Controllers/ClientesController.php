@@ -8,6 +8,11 @@ use Illuminate\Http\Request;
 class ClientesController extends Controller
 {
 
+    public function index(){
+        // Consultar clientes con Eloquent
+        $Usuario = Cliente::all();   
+        return view('clientes.listado',['usuarios' => $Usuario] );
+    }
 
     public function getclientes() {
         
@@ -24,6 +29,7 @@ class ClientesController extends Controller
 
 
     public function registrarCli(Request $request) {
+
         $Usuario = new Cliente();
         $Usuario->login = $request->input('login');
         $Usuario->Contraseña = $request->input('Password');

@@ -2,7 +2,7 @@
 @section('contenido')
     <h1> Registro de Clientes </h1>
   
-    <div class="p-3 mb-2 bg-dark text-white">  <form action="{{url('/clientes/registrar')}}" method="POST">
+    <div class="p-3 mb-2 bg-dark text-white">  <form action="{{url('clientes/registrar')}}" method="POST">
         @csrf
 
         <label for="login">Login </label>
