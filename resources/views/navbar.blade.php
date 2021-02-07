@@ -23,10 +23,15 @@
           <a class="dropdown-item" href="{{url('/informacion/ubicacion')}}">Ubicacion</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ url('/categorias/listado')}}" tabindex="-1" role="button" aria-disabled="true">Catalogo</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Catalogo </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{url('/catalogo/desayunos')}}">Desayunos</a>
+          <a class="dropdown-item" href="{{url('/catalogo/flores')}}">Flores</a>
+          <a class="dropdown-item" href="{{url('/catalogo/frutales')}}">Frutales</a>
+          <a class="dropdown-item" href="{{url('/catalogo/anchetas')}}">Anchetas</a>
+        </div>
       </li>
-      
       
       
   
@@ -35,7 +40,7 @@
       </li>
     </ul>
     <li class="nav-item">
-        <a class="nav-link" href="{{ url('/clientes/registrar')}}" tabindex="-1" role="button" aria-disabled="true">Registrarse</a>
+        <a class="nav-link" href="{{ url('/clientes/registro')}}" tabindex="-1" role="button" aria-disabled="true">Registrarse</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ url('/Administracion/login')}}" tabindex="-1" role="button" aria-disabled="true">iniciar sesion</a>

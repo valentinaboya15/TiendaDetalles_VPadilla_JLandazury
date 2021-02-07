@@ -5,6 +5,17 @@
     <div class="p-3 mb-2 bg-dark text-white">  <form action="{{url('clientes/registrar')}}" method="POST">
         @csrf
 
+        <div>
+        <label for="id_rol">Rol</label>
+       
+       <select name="id_rol" class="form-select form-select-sm" aria-label=".form-select-sm example">
+       <option selected>Seleccione opcion</option>
+       <option value="1">usuario </option>
+     
+       </select>
+
+       </div>
+
         <label for="login">Login </label>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
@@ -12,21 +23,15 @@
             </div>
             <input type="text" class="form-control" id='login' name='login'  placeholder="Login" aria-label="Username" aria-describedby="basic-addon1" required>
         </div>
-
         
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-   
-            </div>
-            <input type="hidden" class="form-control" id='id' name='id' value='oculto' placeholder="Login" aria-label="Username" aria-describedby="basic-addon1" required>
-        </div>
+       
 
-        <label for="password">Contraseña </label>
+        <label for="Password">Contraseña </label>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">@</span>
             </div>
-            <input type="password" class="form-control" id='password' name='contraseña'  placeholder="password"  aria-describedby="basic-addon1">
+            <input type="Password" class="form-control" id='Password' name='Password'  placeholder="Password"  aria-describedby="basic-addon1">
         </div>
 
         <label for="nombre">Nombre </label>
@@ -34,7 +39,7 @@
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">@</span>
             </div>
-            <input type="text" class="form-control" id='nombre' name='nombre' placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1" required>
+            <input type="text" class="form-control" id='nombre' name='nombre' placeholder="nombre" aria-label="Username" aria-describedby="basic-addon1" required>
         </div>
 
         <label for="apellido">Apellido </label>
@@ -42,7 +47,7 @@
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">@</span>
             </div>
-            <input type="text" class="form-control" id='apellido' name='apellido'  placeholder="Apellido" aria-label="Username" aria-describedby="basic-addon1" required>
+            <input type="text" class="form-control" id='apellido' name='apellido'  placeholder="apellido" aria-label="Username" aria-describedby="basic-addon1" required>
         </div>
 
         <label for="cedula">Cedula </label>
@@ -50,7 +55,7 @@
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">@</span>
             </div>
-            <input type="text" class="form-control" id='cedula' name='cedula'  placeholder="Cedula" aria-label="Username" aria-describedby="basic-addon1" required>
+            <input type="text" class="form-control" id='cedula' name='cedula'  placeholder="cedula" aria-label="Username" aria-describedby="basic-addon1" required>
         </div>
 
        
@@ -71,26 +76,26 @@
         </div>
 
        
-        <label for="correo">Correo Electronico </label>
+        <label for="email">Correo Electronico </label>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1">@</span>
             </div>
-            <input type="email" class="form-control" id='correo' name='correo'  placeholder="Correo"  aria-describedby="basic-addon1">
+            <input type="email" class="form-control" id='email' name='email'  placeholder="email"  aria-describedby="basic-addon1">
         </div>
 
         <label class="form-check-label">
                 Genero
         </label>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="genero" id="fem" value="f" checked>
-            <label class="form-check-label" for="fem">
+            <input class="form-check-input" type="radio" name="genero" id="F" value="F" checked>
+            <label class="form-check-label" for="F">
                Femenino
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="genero" id="mas" value="m">
-            <label class="form-check-label" for="mas">
+            <input class="form-check-input" type="radio" name="genero" id="M" value="M">
+            <label class="form-check-label" for="M">
                 Masculino
             </label>
         </div>

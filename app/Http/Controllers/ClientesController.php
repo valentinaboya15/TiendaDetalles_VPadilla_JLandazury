@@ -21,8 +21,8 @@ class ClientesController extends Controller
         return view('clientes.visualizar.cliente',['usuarios'=>$Usuario]);
     }
 
-    public function formularioReg(){
-        return view('clientes.form_registro') ;
+    public function form_registro(){
+        return view('clientes.registro') ;
     }
 
     
@@ -31,18 +31,19 @@ class ClientesController extends Controller
     public function registrarCli(Request $request) {
 
         $Usuario = new Cliente();
+        $Usuario->id_rol = $request->input('id_rol');
         $Usuario->login = $request->input('login');
-        $Usuario->Contraseña = $request->input('Password');
-        $Usuario->Nombre = $request->input('nombre');
-        $Usuario->Apellido= $request->input('apellido');
-        $Usuario->Cedula = $request->input('cedula');
-        $Usuario->Domicilio = $request->input('domicilio');
-        $Usuario->Celular = $request->input('celular');
+        $Usuario->Password = $request->input('Password');
+        $Usuario->nombre = $request->input('nombre');
+        $Usuario->apellido= $request->input('apellido');
+        $Usuario->cedula = $request->input('cedula');
+        $Usuario->domicilio = $request->input('domicilio');
+        $Usuario->celular = $request->input('celular');
         $Usuario->email = $request->input('email');
-        $Usuario->Genero = $request->input('genero');
-        $Usuario->Foto = $request->input('foto');
+        $Usuario->genero = $request->input('genero');
+        $Usuario->foto = $request->input('foto');
         $Usuario->save();
-        return redirect()->route('listado_clientes');
+        return view('clientes.registrar');
     }
 
     

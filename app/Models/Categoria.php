@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Categoria extends Model
 {
-    use HasFactory;
+   protected $table ='categoria';
+   protected $primaryKey ='id_cate';
+   public $timestamps = false;
 }
